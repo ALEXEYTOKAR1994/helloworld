@@ -1,0 +1,521 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* обнуление */
+@font-face {
+  font-family: "Balqis";
+  src: url("../fonts/Balqis.eot");
+  src: local("☺"), url("../fonts/Balqis.woff") format("woff"),
+    url("../fonts/Balqis.ttf") format("truetype"),
+    url("../fonts/Balqis.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* fonts */
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000000;
+  font-weight: 300;
+}
+.wraper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 1 auto;
+}
+.header {
+  height: 1080px;
+  background: url(../img/header\ image.jpg) 0 0 / cover no-repeat;
+}
+.conteiner {
+  max-width: 1202px;
+  margin: 0 auto;
+}
+.header__menu {
+  padding: 72px 0 152px 0;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+}
+.header__list a {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0 52px 0 0;
+}
+.header__list li:first-child {
+  text-decoration-line: underline;
+}
+.tel {
+  background: url(../img/tel2.svg) 0 -2px no-repeat;
+}
+.tel a {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  padding: 0 0 0 35px;
+}
+.header__title {
+  font-family: "Balqis";
+  font-size: 250px;
+  line-height: 334px;
+  text-align: center;
+}
+.header__subtitle {
+  margin: -80px 0 0 655px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 66px;
+}
+.header__route {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration-line: underline;
+}
+.header__route a {
+  color: #000000;
+}
+
+.fairy {
+  padding: 200px 0;
+}
+.fairy__title {
+  font-family: "Balqis";
+  font-size: 96px;
+  line-height: 128px;
+  color: #e2ab3f;
+}
+.fayri__subtitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: -30px 0 100px 181px;
+}
+.fairy__row {
+  display: flex;
+  position: relative;
+}
+.fairy__image {
+  position: absolute;
+  right: 610px;
+  flex: 1 1 960px;
+}
+.fairy__body {
+  max-width: 545px;
+  margin: 50px 0 0 655px;
+}
+.fairy__text {
+}
+.fairy__text-p {
+  font-weight: 700;
+}
+.fairy__text p {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 0 50px 0;
+}
+
+.our-trip {
+  height: 1095px;
+  margin: 0 0 200px 0;
+}
+.our-trip__route {
+}
+.our-trip__row {
+  display: flex;
+  position: relative;
+}
+.our__trip__body {
+  flex: 0 1 330px;
+}
+.our-trip__title {
+  font-family: "Balqis";
+  font-size: 96px;
+  line-height: 128px;
+  color: #e2ab3f;
+}
+.our-trip__subtitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: -30px 0 100px 242px;
+}
+.our-trip__day {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 20px 0;
+}
+.our-trip__list {
+  margin: 0 0 50px 0;
+}
+.our-trip__list li {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+.our-trip__btn {
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e2ab3f;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+}
+.our-trip__btn a {
+  font-weight: 300;
+  font-size: 24px;
+  color: #000000;
+}
+.our-trip__image {
+  flex: 0 0 960px;
+  position: absolute;
+  left: 610px;
+}
+
+.hotel {
+  margin: 0 0 150px 0;
+}
+.hotel__title {
+  font-family: "Balqis";
+  font-size: 96px;
+  line-height: 128px;
+  color: #e2ab3f;
+}
+.hotel__subtitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: -25px 0 100px 122px;
+}
+.hotel__row {
+  display: flex;
+}
+.hotel__image {
+  flex: 0 0 500px;
+}
+.hotel__body {
+  margin: 0 0 0 99px;
+}
+.hotel__text {
+  margin: 0 0 80px 0;
+}
+.hotel__text p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 0 20px 0;
+}
+.hotel__text p:last-child {
+  margin: 0;
+}
+.hotel__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.hotel__wrap-img {
+  padding: 0 20px;
+  margin: 0 0 50px 0;
+}
+.hotel__wrap-img:last-child {
+  margin: 0;
+}
+.price {
+  padding: 0 0 201px 0;
+}
+.price__title {
+  font-family: "Balqis";
+  font-size: 96px;
+  line-height: 128px;
+  color: #e2ab3f;
+  margin: 0 0 0 36px;
+}
+.price__subtitle {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: -30px 0 100px 158px;
+}
+.price__row {
+  display: flex;
+  position: relative;
+}
+.price__on {
+  flex: 0 1 525px;
+  margin: 0 75px 0 37px;
+}
+.price__item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 80px 0;
+}
+.price__list {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+.price__list li {
+  margin: 0 0 20px 0;
+}
+.price__list li:last-child {
+  margin: 0;
+}
+.price__off {
+  flex: 0 1 364px;
+  margin: 0 20px 0 0;
+}
+.price__images-ball {
+  position: absolute;
+  bottom: 0;
+  left: 1021px;
+  width: 321px;
+  height: 442px;
+}
+.price__ball1 {
+  position: absolute;
+  top: 167px;
+}
+.price__ball2 {
+  position: absolute;
+  bottom: 0;
+  left: 73px;
+}
+.price__ball3 {
+  position: absolute;
+  left: 115px;
+  bottom: 137px;
+}
+
+.price2 {
+  padding: 0 0 240px 0;
+}
+.price2__row {
+  display: flex;
+}
+.price2__body {
+  flex: 0 1 381px;
+  margin: 105px 113px 0 106px;
+}
+.price2__date {
+  font-family: "Balqis";
+  font-size: 96px;
+  line-height: 69px;
+  color: #e2ab3f;
+}
+.price2__signature-date {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 25px 141px;
+}
+.price2__number {
+  font-family: "Balqis";
+  font-size: 96px;
+  line-height: 69px;
+  color: #e2ab3f;
+  margin: 0 0 0 122px;
+}
+.price2__signature-number {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 100px 244px;
+}
+.price2__form-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+  margin: 0 10px 45px 10px;
+}
+.price2__form {
+}
+.price2__name {
+  border: 1px solid #e2ab3f;
+  height: 50px;
+  margin: 0 0 20px 0;
+}
+.price2__name input {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 45px;
+  box-sizing: border-box;
+  padding: 0 0 0 29px;
+}
+.price__tel {
+  border: 1px solid #e2ab3f;
+  height: 50px;
+  margin: 0 0 20px 0;
+}
+.price__tel input {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 45px;
+  box-sizing: border-box;
+  padding: 0 0 0 29px;
+}
+.price2__btn {
+  border: 1px solid #e2ab3f;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 50px;
+  line-height: 45px;
+  font-weight: 300;
+  font-size: 24px;
+}
+.price2__btn a {
+  color: #000000;
+}
+.price2__image {
+  flex: 0 1 600px;
+}
+.footer {
+  height: 1180px;
+  background: url(../img/footer/footer\ background.jpg) 0 0 / cover no-repeat;
+}
+.footer__row {
+  display: flex;
+}
+.footer__contacts {
+  width: 356px;
+  height: 527px;
+  margin: 96px 0 0 115px;
+  background: url(../img/footer\ ball.png) 0 0 / auto 100% no-repeat;
+}
+.footer__title {
+  font-family: "Balqis";
+  font-size: 86px;
+  line-height: 115px;
+  color: #e2ab3f;
+  text-align: center;
+  margin: 71px 0 10px 0;
+}
+.footer__tel {
+  height: 30px;
+  background: url(../img/footer/phone.png) 70px 0 no-repeat;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  line-height: 21px;
+  padding: 5px 0 0 0;
+  color: #000000;
+  margin: 0 0 11px 0;
+}
+.footer__tel a {
+  color: #000000;
+}
+.footer__email {
+  height: 30px;
+  background: url(../img/footer/envelope.png) 35px 0 no-repeat;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding: 5px 0 0 0;
+  margin: 0 0 33px 0;
+}
+.footer__email a {
+  color: #000000;
+}
+.footer__icon {
+  text-align: center;
+}
+.footer__icon a {
+  margin: 0 15px 0 0;
+}
+.footer__text {
+  font-family: "Balqis";
+  font-size: 86px;
+  line-height: 115px;
+  color: #000000;
+  margin: 311px 0 0 139px;
+}
